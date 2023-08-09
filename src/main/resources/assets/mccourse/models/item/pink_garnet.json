@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layor0": "mccourse:item/pink_garnet"
+  }
+}
