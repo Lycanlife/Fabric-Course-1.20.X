@@ -29,6 +29,7 @@ public class ModItems {
     entries.add(PINK_GARNET);
     entries.add(RAW_PINK_GARNET);
     entries.add(ModBlocks.PINK_GARNET_BLOCK);
+    entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
     }
     public static void registerModItems(){
         MCCourseMod.LOGGER.info("Registering Mod Items For" + MCCourseMod.MOD_ID);
