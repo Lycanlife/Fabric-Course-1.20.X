@@ -26,6 +26,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
                         entries.add(ModBlocks.NETHER_PINK_GARNET_ORE);
                         entries.add(ModBlocks.END_STONE_PINK_GARNET_ORE);
+                        entries.add(ModItems.METAL_DETECTOR);
                     }).build());
 
     public static void registerItemGroups(){
