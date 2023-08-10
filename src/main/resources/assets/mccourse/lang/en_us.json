@@ -11,5 +11,8 @@
   "block.mccourse.deepslate_pink_garnet_ore": "Deepslate Pink Garnet Ore",
   "block.mccourse.end_stone_pink_garnet_ore": "End Stone Pink Garnet Ore",
   "block.mccourse.nether_pink_garnet_ore": "Nether Pink Garnet Ore",
-  "block.mccourse.sound_block": "Sound Block"
+  "block.mccourse.sound_block": "Sound Block",
+  "tooltip.mccourse.metaldetector.shift": "Right Click on blocks to find valuables",
+  "tooltip.mccourse.metaldetector": "Press §eSHIFT§r for more information",
+  "tooltip.mccourse.sound_block": "Plays a nice sound when or being clicked/shift clicked on!"
 }
