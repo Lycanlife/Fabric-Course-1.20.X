@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.lycan.mccourse.block.ModBlocks;
 import net.lycan.mccourse.item.ModItemGroup;
 import net.lycan.mccourse.item.ModItems;
+import net.lycan.mccourse.util.ModRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,5 +18,6 @@ public class MCCourseMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroup.registerItemGroups();
+		ModRegistries.registerModStuff();
 	}
 }
