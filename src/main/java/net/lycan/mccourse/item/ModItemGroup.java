@@ -28,6 +28,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.END_STONE_PINK_GARNET_ORE);
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModBlocks.SOUND_BLOCK);
+                        entries.add(ModItems.CAULIFLOWER);
                     }).build());
 
     public static void registerItemGroups(){

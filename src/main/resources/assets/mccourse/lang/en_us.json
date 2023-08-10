@@ -6,7 +6,9 @@
   "itemgroup.pink_garnet_group": "Pink Garnet Course Group",
   "block.mccourse.pink_garnet_ore": "Pink Garnet Ore",
   "item.mccourse.metal_detector": "Metal Detector",
+  "item.mccourse.cauliflower": "Cauliflower",
   "block.mccourse.deepslate_pink_garnet_ore": "Deepslate Pink Garnet Ore",
   "block.mccourse.end_stone_pink_garnet_ore": "End Stone Pink Garnet Ore",
-  "block.mccourse.nether_pink_garnet_ore": "Nether Pink Garnet Ore"
+  "block.mccourse.nether_pink_garnet_ore": "Nether Pink Garnet Ore",
+  "block.mccourse.sound_block": "Sound Block"
 }
