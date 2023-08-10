@@ -1,5 +1,8 @@
-// 1.20.1	2023-08-10T13:00:15.4263937	Mc Course/Tags for minecraft:block
+// 1.20.1	2023-08-10T13:30:20.0174762	Mc Course/Tags for minecraft:block
 88a477c94bf794618f586a66f25f2a741a85a42c data\minecraft\tags\blocks\needs_diamond_tool.json
-3b5885a7089d9d19a336d0815c36cf348e05cc71 data\minecraft\tags\blocks\mineable\pickaxe.json
+7f0e57a7461090b88f37d030fab44cfd7c1c56b6 data\minecraft\tags\blocks\mineable\pickaxe.json
 78b821323f95d2a39da78c8e495f9ea41951b6f0 data\minecraft\tags\blocks\mccourse.json
+517632cca94e9946eb0ffa70b9c76633dbe1cf71 data\minecraft\tags\blocks\walls.json
+44c98cbccbbe6c963068d9855497e95103c11746 data\minecraft\tags\blocks\fence_gates.json
 cac54469142d24a8401f95e0fb8d26528f2f0f9d data\minecraft\tags\blocks\needs_iron_tool.json
+054139939470485ffcc4479b643d9d6e0f51496d data\minecraft\tags\blocks\fences.json
