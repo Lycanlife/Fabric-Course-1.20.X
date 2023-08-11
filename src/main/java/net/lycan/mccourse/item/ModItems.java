@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lycan.mccourse.MCCourseMod;
 import net.lycan.mccourse.block.ModFoodComponents;
 import net.lycan.mccourse.item.custom.MetalDetectorItem;
+import net.lycan.mccourse.item.custom.ModArmorItem;
 import net.lycan.mccourse.item.custom.ModPoisonSwordItem;
 import net.lycan.mccourse.item.custom.PaxelItem;
 import net.minecraft.item.*;
@@ -43,13 +44,15 @@ public class ModItems {
     public static final Item PINK_GARNET_PAXEL = registerItem("pink_garnet_paxel",
             new PaxelItem(ModToolMaterial.PINK_GARNET, 3, -3, new FabricItemSettings()));
     public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item PINK_GARNET_LEGGINGS = registerItem("pink_garnet_leggings",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",
+            new HorseArmorItem(14, "pink_garnet", new FabricItemSettings()));
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(MCCourseMod.MOD_ID, name), item);
     }

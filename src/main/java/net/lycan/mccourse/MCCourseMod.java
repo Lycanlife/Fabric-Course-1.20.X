@@ -3,6 +3,7 @@ package net.lycan.mccourse;
 import net.fabricmc.api.ModInitializer;
 
 import net.lycan.mccourse.block.ModBlocks;
+import net.lycan.mccourse.enchantment.ModEnchantments;
 import net.lycan.mccourse.item.ModItemGroup;
 import net.lycan.mccourse.item.ModItems;
 import net.lycan.mccourse.util.ModRegistries;
@@ -19,5 +20,6 @@ public class MCCourseMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItemGroup.registerItemGroups();
 		ModRegistries.registerModStuff();
+		ModEnchantments.registerEnchantments();
 	}
 }
