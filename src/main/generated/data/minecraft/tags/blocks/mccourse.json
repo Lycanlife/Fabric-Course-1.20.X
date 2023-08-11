@@ -9,6 +9,9 @@
     "#minecraft:iron_ores",
     "#minecraft:lapis_ores",
     "#minecraft:redstone_ores",
-    "#minecraft:emerald_ores"
+    "#minecraft:emerald_ores",
+    "#minecraft:mineable/pickaxe",
+    "#minecraft:mineable/axe",
+    "#minecraft:mineable/shovel"
   ]
 }

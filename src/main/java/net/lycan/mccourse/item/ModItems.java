@@ -4,12 +4,11 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lycan.mccourse.MCCourseMod;
-import net.lycan.mccourse.block.ModBlocks;
 import net.lycan.mccourse.block.ModFoodComponents;
 import net.lycan.mccourse.item.custom.MetalDetectorItem;
-import net.minecraft.item.FoodComponents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.lycan.mccourse.item.custom.ModPoisonSwordItem;
+import net.lycan.mccourse.item.custom.PaxelItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -30,19 +29,24 @@ public class ModItems {
 
     public static final Item PEAT_BRICK = registerItem("peat_brick",
             new Item(new FabricItemSettings()));
+    public static final Item PINK_GARNET_SWORD = registerItem("pink_garnet_sword",
+            new ModPoisonSwordItem(ModToolMaterial.PINK_GARNET, 2, -2.4f, new FabricItemSettings()));
+    public static final Item PINK_GARNET_PICKAXE = registerItem("pink_garnet_pickaxe",
+            new PickaxeItem(ModToolMaterial.PINK_GARNET, 2, -2.8f, new FabricItemSettings()));
+    public static final Item PINK_GARNET_AXE = registerItem("pink_garnet_axe",
+            new AxeItem(ModToolMaterial.PINK_GARNET, 2, -3, new FabricItemSettings()));
+    public static final Item PINK_GARNET_SHOVEL = registerItem("pink_garnet_shovel",
+            new ShovelItem(ModToolMaterial.PINK_GARNET, 2, 2, new FabricItemSettings()) );
+
+    public static final Item PINK_GARNET_HOE = registerItem("pink_garnet_hoe",
+            new HoeItem(ModToolMaterial.PINK_GARNET, 2, 0.0f, new FabricItemSettings()));
+    public static final Item PINK_GARNET_PAXEL = registerItem("pink_garnet_paxel",
+            new PaxelItem(ModToolMaterial.PINK_GARNET, 3, -3, new FabricItemSettings()));
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(MCCourseMod.MOD_ID, name), item);
     }
 
     private static void itemGroupIngredients(FabricItemGroupEntries entries) {
-    entries.add(PINK_GARNET);
-    entries.add(RAW_PINK_GARNET);
-    entries.add(ModBlocks.PINK_GARNET_BLOCK);
-    entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
-    entries.add(ModBlocks.PINK_GARNET_ORE);
-    entries.add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
-    entries.add(ModBlocks.NETHER_PINK_GARNET_ORE);
-    entries.add(ModBlocks.END_STONE_PINK_GARNET_ORE);
     }
     public static void registerModItems(){
         MCCourseMod.LOGGER.info("Registering Mod Items For" + MCCourseMod.MOD_ID);

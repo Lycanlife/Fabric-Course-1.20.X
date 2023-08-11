@@ -4,8 +4,12 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.lycan.mccourse.block.ModBlocks;
 import net.lycan.mccourse.util.ModTags;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -44,8 +48,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE,
-                        ModBlocks.END_STONE_PINK_GARNET_ORE,
+                .add(ModBlocks.END_STONE_PINK_GARNET_ORE,
                         ModBlocks.NETHER_PINK_GARNET_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -61,6 +64,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.PINK_GARNET_FENCE_GATE);
+
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
+                .add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
+                .add(ModBlocks.NETHER_PINK_GARNET_ORE);
+
+        getOrCreateTagBuilder(ModTags.Blocks.PAXEL_MINEABLE)
+        .forceAddTag(BlockTags.PICKAXE_MINEABLE)
+                .forceAddTag(BlockTags.AXE_MINEABLE)
+                .forceAddTag(BlockTags.SHOVEL_MINEABLE);
 
     }
 }
