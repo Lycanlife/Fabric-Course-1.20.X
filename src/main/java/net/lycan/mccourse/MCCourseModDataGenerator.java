@@ -11,6 +11,7 @@ public class MCCourseModDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(ModBlockLootTableGenerator::new);
 		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeGenerator::new);
 
