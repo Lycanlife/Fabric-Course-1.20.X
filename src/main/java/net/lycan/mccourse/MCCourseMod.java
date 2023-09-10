@@ -6,6 +6,7 @@ import net.lycan.mccourse.block.ModBlocks;
 import net.lycan.mccourse.enchantment.ModEnchantments;
 import net.lycan.mccourse.item.ModItemGroup;
 import net.lycan.mccourse.item.ModItems;
+import net.lycan.mccourse.sound.ModSounds;
 import net.lycan.mccourse.util.ModRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,5 +22,6 @@ public class MCCourseMod implements ModInitializer {
 		ModItemGroup.registerItemGroups();
 		ModRegistries.registerModStuff();
 		ModEnchantments.registerEnchantments();
+		ModSounds.registerSounds();
 	}
 }

@@ -50,6 +50,14 @@ public class ModItemGroup {
                         entries.add(ModItems.PINK_GARNET_LEGGINGS);
                         entries.add(ModItems.PINK_GARNET_BOOTS);
                         entries.add(ModItems.PINK_GARNET_HORSE_ARMOR);
+                        entries.add(ModBlocks.PINK_GARNET_LAMP_BLOCK);
+                        entries.add(ModItems.DATA_TABLET);
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
+                        entries.add(ModBlocks.PETUNIA);
+                        entries.add(ModBlocks.GEM_EMPOWERING_STATION);
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
+                        entries.add(ModItems.RADIATION_STAFF);
+                        entries.add(ModItems.PINK_GARNET_BOW);
                     }).build());
 
     public static void registerItemGroups(){

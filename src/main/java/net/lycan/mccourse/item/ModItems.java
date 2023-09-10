@@ -4,11 +4,11 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lycan.mccourse.MCCourseMod;
+import net.lycan.mccourse.block.ModBlocks;
 import net.lycan.mccourse.block.ModFoodComponents;
-import net.lycan.mccourse.item.custom.MetalDetectorItem;
-import net.lycan.mccourse.item.custom.ModArmorItem;
-import net.lycan.mccourse.item.custom.ModPoisonSwordItem;
-import net.lycan.mccourse.item.custom.PaxelItem;
+import net.lycan.mccourse.block.custom.CauliflowerCropBlock;
+import net.lycan.mccourse.item.custom.*;
+import net.lycan.mccourse.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -53,6 +53,16 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",
             new HorseArmorItem(14, "pink_garnet", new FabricItemSettings()));
+    public static final Item DATA_TABLET = registerItem("data_tablet",
+            new DataTabletItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new MusicDiscItem(9, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
+            new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP_BLOCK, new FabricItemSettings()));
+    public static final Item RADIATION_STAFF = registerItem("radiation_staff",
+            new Item(new FabricItemSettings().maxCount(1)));
+    public static final Item PINK_GARNET_BOW = registerItem("pink_garnet_bow",
+            new BowItem(new FabricItemSettings().maxCount(1)));
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(MCCourseMod.MOD_ID, name), item);
     }
