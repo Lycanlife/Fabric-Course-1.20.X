@@ -3,6 +3,7 @@ package net.lycan.mccourse.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.lycan.mccourse.MCCourseMod;
 import net.lycan.mccourse.block.ModBlocks;
+import net.lycan.mccourse.fluid.ModFluids;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
@@ -58,6 +59,8 @@ public class ModItemGroup {
                         entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
                         entries.add(ModItems.RADIATION_STAFF);
                         entries.add(ModItems.PINK_GARNET_BOW);
+                        entries.add(ModItems.PINK_GARNET_SHIELD);
+                        entries.add(ModFluids.SOAP_WATER_BUCKET);
                     }).build());
 
     public static void registerItemGroups(){

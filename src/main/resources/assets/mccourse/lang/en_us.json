@@ -33,6 +33,7 @@
   "item.mccourse.cauliflower_seeds": "Cauliflower Seeds",
   "block.mccourse.petunia": "Petunia",
   "item.mccourse.pink_garnet_bow": "Pink Garnet Bow",
+  "item.mccourse.pink_garnet_shield": "Pink Garnet Shield",
   "block.mccourse.pink_garnet_button": "Pink Garnet Button",
   "block.mccourse.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
   "block.mccourse.pink_garnet_door": "Pink Garnet Door",
@@ -40,6 +41,7 @@
   "block.mccourse.sound_block": "Sound Block",
   "block.mccourse.gem_empowering_station": "Gem Empowering Station",
   "item.mccourse.radiation_staff": "Radiation Staff",
+  "item.mccourse.soap_water_bucket": "Bucket Of Soap Water",
   "block.mccourse.pink_garnet_lamp_block": "Pink Garnet Lamp",
   "tooltip.mccourse.metaldetector.shift": "Right Click on blocks to find valuables",
   "tooltip.mccourse.metaldetector": "Press §eSHIFT§r for more information",
@@ -50,6 +52,19 @@
   "sounds.mccourse.pink_garnet_lamp_step": "Pink Garnet Ore Step",
   "sounds.mccourse.pink_garnet_lamp_fall": "Pink Garnet Lamp Fall",
   "sounds.mccourse.pink_garnet_lamp_hit": "Pink Garnet Lamp Hit",
+  "painting.mccourse.world.title": "World",
+  "painting.mccourse.world.author": "NanoAttack",
+  "painting.mccourse.saw_them.title": "Saw Them",
+  "painting.mccourse.saw_them.author": "NanoAttack",
+  "painting.mccourse.shrimp.title": "Shrimp",
+  "painting.mccourse.shrimp.author": "NanoAttack",
+
   "item.mccourse.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
-  "item.mccourse.bar_brawl_music_disc": "Bar Brawl"
+  "item.mccourse.bar_brawl_music_disc": "Bar Brawl",
+
+  "effect.mccourse.slimey": "Slimey",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Splash Potion Of Slimey",
+  "item.minecraft.potion.effect.slimey_potion": "Potion Of Slimey",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Potion Of Slimey",
+  "entity.minecraft.villager.soundmaster": "Soundmaster"
 }

@@ -13,6 +13,7 @@ public class ModModelPredicateProvider {
                 (stack, world, entity, seed) -> stack.hasNbt() ? 1f : 0f);
 
         registerBow(ModItems.PINK_GARNET_BOW);
+        registerShield(ModItems.PINK_GARNET_SHIELD);
     }
     private static void registerBow(Item bow){
         ModelPredicateProviderRegistry.register(bow, new Identifier("pull"), (stack, world, entity, seed) -> {
@@ -25,5 +26,8 @@ public class ModModelPredicateProvider {
             return (float)(stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / 20.0f;
         });
         ModelPredicateProviderRegistry.register(bow, new Identifier("pulling"), (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0f : 0.0f);
+    }
+    private static void registerShield(Item shield){
+        ModelPredicateProviderRegistry.register(shield, new Identifier("blocking"), (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0f : 0.0f);
     }
 }

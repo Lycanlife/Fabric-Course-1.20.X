@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.lycan.mccourse.block.ModBlocks;
 import net.lycan.mccourse.block.custom.CauliflowerCropBlock;
 import net.lycan.mccourse.block.custom.PinkGarnetLampBlock;
+import net.lycan.mccourse.fluid.ModFluids;
 import net.lycan.mccourse.item.ModItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.CropBlock;
@@ -87,6 +88,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.SOAP_WATER_BUCKET, Models.GENERATED);
 
     }
 

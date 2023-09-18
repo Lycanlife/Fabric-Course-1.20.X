@@ -63,6 +63,8 @@ public class ModItems {
             new Item(new FabricItemSettings().maxCount(1)));
     public static final Item PINK_GARNET_BOW = registerItem("pink_garnet_bow",
             new BowItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PINK_GARNET_SHIELD = registerItem("pink_garnet_shield",
+            new ShieldItem(new FabricItemSettings().maxCount(1)));
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(MCCourseMod.MOD_ID, name), item);
     }
